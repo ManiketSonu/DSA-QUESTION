@@ -2,7 +2,7 @@ package Array_Scaler;
 
 public class Sum_Of_All_SubArray {
     public static void main(String[] args) {
-        int arr[] = {1,2,3};
+        int arr[] = {2,1,3,5};
         System.out.println(SumofAllSubarray(arr));
     }
     public static int SumofAllSubarray(int arr[])

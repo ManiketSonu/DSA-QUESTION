@@ -3,7 +3,7 @@ package Array_Scaler;
 public class PrefixSum {
     public static void main(String arg[])
     {
-        int arr[] = {1,2,3,4,5};
+        int arr[] = {-2, 0, 3, -5, 2, -1};
         int res[] = PFSum(arr);
         for(int i=0;i<res.length;i++)
         {

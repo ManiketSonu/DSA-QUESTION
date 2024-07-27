@@ -3,7 +3,7 @@ package Stringss;
 public class SubStringg {
     public static void main(String arg[])
     {
-        String A="Maniket";
+        String A="abab";
         SuString(A);
     }
     public static String SuString(String A)
@@ -19,6 +19,7 @@ public class SubStringg {
                 for(int k=i;k<=j;k++)
                 {
                     System.out.print(A.charAt(k));
+                    
                 }
                 System.out.println();
             }

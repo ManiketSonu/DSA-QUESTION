@@ -3,7 +3,7 @@ package Array_Scaler;
 public class Second_Largest {
     public static void main(String arg[])
     {
-        int arr[] = {1,2,3};
+        int arr[] = {13,7,16,18,14,17,18,8,10};
         // int res1 = SecondLargest(arr);
         // System.out.println(res1);
         System.out.println(secondMax(arr));

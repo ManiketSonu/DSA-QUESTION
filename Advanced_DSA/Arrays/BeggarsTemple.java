@@ -2,7 +2,7 @@ package Advanced_DSA.Arrays;
 
 public class BeggarsTemple {
     public static void main(String[] args) {
-        int arr[] = {};
+        // int arr[] = {};
     }
     public static int cout(int arr[], int b)
     {

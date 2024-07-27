@@ -11,6 +11,6 @@ public class SumOfN {
         {
             return 1;
         }
-        return n+Sum(n-1);
+        return Sum(n-1)+n;
     }
 }

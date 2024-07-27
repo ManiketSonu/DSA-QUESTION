@@ -4,7 +4,7 @@ public class Transpose_Matrix {
     public static void main(String arg[])
     {
         // int arr[][] = {{1,2,3},{5,6,7},{9,10,11}};
-        int arr[][] = {{1,2},{3,4}};
+        int arr[][] = {{1,2,3},{4,5,6},{7,8,9}};
         int res1[][] = Transpose(arr);
         for(int i=0;i<res1.length;i++)
         {
@@ -26,7 +26,7 @@ public class Transpose_Matrix {
             {
                 result[j][i]=arr[i][j];
             }
-        }
+        } 
         return result;
     }
 }
