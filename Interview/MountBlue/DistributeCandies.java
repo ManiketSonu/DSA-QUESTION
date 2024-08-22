@@ -40,6 +40,11 @@ public class DistributeCandies {
         {
             totalCandies = totalCandies+cand;
         }
+        // for(int i=0;i<res.length;i++)
+        // {
+        //     int cand = res[i];
+        //     totalCandies = totalCandies+cand;
+        // }
         return totalCandies;
     }
 }
