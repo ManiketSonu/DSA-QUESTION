@@ -2,7 +2,7 @@ package Advanced_DSA.Stackk;
 
 public class MaxAndMin {
     public static void main(String[] args) {
-        int arr[] = {2,5,3};
+        int arr[] = {3,1,2,4};
         FinAllSubArray(arr);
     }
     public static void FinAllSubArray(int arr[])

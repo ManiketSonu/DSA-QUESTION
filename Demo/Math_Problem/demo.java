@@ -1,6 +1,6 @@
 package Demo.Math_Problem;
 
-public class demo {
+public class demo implements Runnable{
     public static void main(String[] args) {
         // int[] arr = {58, 40, 51, 88, 70, 67, 28, 46, 77, 28, 28, 93, 53, 17, 12, 31, 45, 47, 34, 95, 95, 92, 41, 10, 63, 42, 51, 89, 99, 52, 69, 31, 14, 25, 31, 40, 19, 14, 63, 9, 71, 28, 27, 1, 2, 11, 69, 82, 30, 92, 3, 89, 78, 94, 28, 2, 11, 84, 62, 61, 9, 44, 31, 67, 99, 65, 75, 26, 60, 36, 38, 94, 53, 9, 90, 43, 31, 15, 32, 13, 88, 70, 49, 73, 4, 51, 40, 1, 33, 44, 44, 75, 58, 84, 71, 26, 83, 20, 55, 21};
         // int arr[] = {1,2,3};
@@ -11,30 +11,50 @@ public class demo {
         // int res = solve(arr);
         // System.out.println(res);
         // int arr[] = {10,9,4,5,4,8,6};
-        int arr[] = {1,2,3,4,5,6};
+        // int arr[] = {1,2,3,4,5,6};
         // int B = 1;
         // int res = solve(arr, B);
         // System.out.println(res);
-        int res = solve(arr);
-        System.out.println(res);
+        // int res = solve(arr);
+        // System.out.println(res);
+        Thread thread1 = new Thread(new demo());
+        Thread thread2 = new Thread(new demo());
+
+        // Starting the threads
+        thread1.start();
+        thread2.start();
     }
-    public static int solve(int arr[])
-    {
-        int n = arr.length;
-        int count = 0;
-        for(int i=0;i<n-1;i++)
-        {
-            if(Math.abs(arr[i]-arr[i+1])==1)
-            {
-                count++;
-            }
-            else
-            {
-                continue;
+
+    @Override
+    public void run() {
+        // TODO Auto-generated method stub
+        for (int i = 0; i < 5; i++) {
+            System.out.println(Thread.currentThread().getName() + " - Count: " + i);
+            try {
+                Thread.sleep(500); // Simulate work
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
-        return count;
     }
+
+    // public static int solve(int arr[])
+    // {
+    //     int n = arr.length;
+    //     int count = 0;
+    //     for(int i=0;i<n-1;i++)
+    //     {
+    //         if(Math.abs(arr[i]-arr[i+1])==1)
+    //         {
+    //             count++;
+    //         }
+    //         else
+    //         {
+    //             continue;
+    //         }
+    //     }
+    //     return count;
+    // }
     // public static int solve(int arr[], int B)
     // {
     //     int count = 0;
